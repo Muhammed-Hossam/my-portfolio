@@ -1,0 +1,11 @@
+.light {
+  /* background-color: theme('backgroundColor.light'); */
+  /* color: theme('textColor.light'); */
+  background-color: theme('backgroundColor.light');
+  color: theme('textColor.light');
+}
+
+.dark {
+  background-color: theme('backgroundColor.dark');
+  color: theme('textColor.dark');
+}
