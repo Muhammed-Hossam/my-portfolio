@@ -8,9 +8,6 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        // light: "#fff",
-        // dark: "#0E2954"
-        // light: "#E5E0FF",
         light: "#EEF1FF",
         dark: "#061532"
       },
@@ -18,6 +15,19 @@ export default {
         light: "#000",
         dark: "#fff"
       },
+      keyframes: {
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
+        }
+      },
+      animation: {
+        rotate: 'rotate 6s linear infinite'
+      },
+      boxShadow: {
+        'card-light': '0 2px 21px 5px rgba(0, 0, 0, 0.1)',
+        'card-dark': '0 2px 21px 3px rgba(0, 0, 0, 0.25)'
+      }
     },
   },
   plugins: [],

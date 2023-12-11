@@ -1,7 +1,7 @@
 <template>
   <div class="typewriter text-center my-6 xl:!mx-0 xl:text-start w-11/12 mx-auto lg:w-[56rem] h-44 xl:h-16 xl:w-[36rem]">
     <h2 class="text-4xl lg:text-6xl font-normal p-1 lg:p-0">
-      <span class="typed-text font-bold leading-normal">{{ config.typeValue }}</span>
+      <span class="typed-text bg-gradient-to-r from-blue-500 via-purple-500 bg-clip-text text-transparent to-indigo-500 font-bold leading-normal">{{ config.typeValue }}</span>
       <span class="cursor inline-block ml-1 w-1 bg-slate-800 dark:bg-slate-200" ref="cursor" :class="{'typing': config.typeStatus}" style="--cursor-color: rgb(30 41 59)">&nbsp;</span>
     </h2>
   </div>
@@ -16,9 +16,10 @@ const cursor = ref(null);
 const isDarkMode = computed(() => theme.darkMode ? true : false);
 
 const cursorBgColor = (isDarkTheme) => {
-  cursor.value.style.setProperty('--cursor-color', 'rgb(30 41 59)');
   if (isDarkTheme) {
     cursor.value.style.setProperty('--cursor-color', 'rgb(226 232 240)');
+  }else {
+    cursor.value.style.setProperty('--cursor-color', 'rgb(30 41 59)');
   }
 }
 
@@ -92,6 +93,7 @@ const eraseText = () => {
 
 onMounted(() => {
   setTimeout(typeText, config.newTextDelay);
+  cursorBgColor(isDarkMode.value);
 });
 onUnmounted(() => {
   // Clear the timers when the component is unmounted
@@ -100,6 +102,7 @@ onUnmounted(() => {
 })
 
 watch(isDarkMode ,(isDark) => {
+  console.log(isDark)
   cursorBgColor(isDark);
 })
 </script>
@@ -113,11 +116,6 @@ span.cursor.typing {
   animation: none;
 }
 
-.typed-text {
-  background: linear-gradient(to right, #3b82f6, #a855f7, #6366f1); /* Adjust colors as needed */
-  background-clip: text;
-  color: transparent;
-}
 
 @keyframes cursorBlink {
   49% {

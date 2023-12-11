@@ -20,7 +20,6 @@ import { ref } from 'vue';
 import TrayArrowDown from 'vue-material-design-icons/TrayArrowDown.vue';
 
 const trayArrowDownIcon = ref(null)
-console.log(trayArrowDownIcon)
 const addAnimateToIcon = () => {
   trayArrowDownIcon.value.$el.classList.add('animate-bounce')
 }

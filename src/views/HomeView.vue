@@ -1,5 +1,5 @@
 <template>
-  <div class="Home">
+  <div class="Home h-screen">
     <div class="flex flex-col xl:flex-row-reverse xl:justify-between justify-center items-center gap-40">
       <PictureOrbit />
       <div class="grid xl:grid-rows-3 xl:auto-rows-fr  mt-6 xl:mt-0 w-full xl:w-auto xl:h-[25rem]">

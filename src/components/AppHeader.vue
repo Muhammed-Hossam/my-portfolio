@@ -1,10 +1,10 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 bg-light dark:bg-dark !transition-colors !duration-500 !ease-in-out" :class="headerShadow">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-light dark:bg-dark" :class="headerShadow">
     <div class="container mx-auto ">
       <div class="flex justify-between items-center">
         <div class="logo">
           <router-link to="/">
-            <img src="../assets/logo.png" width="70" height="70" alt="">
+            <img src="../assets/logo.png" width="70" height="70" alt="logo">
           </router-link>
         </div>
 

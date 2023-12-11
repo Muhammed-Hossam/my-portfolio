@@ -8,7 +8,8 @@
     <ul class="orbit-icons absolute top-0 left-[10%] lg:top-[18%] lg:left-[20%] origin-center">
       <li 
       v-for="(icon, index) in icons" 
-      :key="index" 
+      :key="index"
+      :title="icon.alt"
       :style="getIconStyle(index)" 
       class="animated-icon absolute flex justify-center items-center w-16 h-16 lg:w-20 lg:h-20 rounded-full transition-colors duration-300 ease-in-out" 
       :class="icon.bgColor"
@@ -60,8 +61,8 @@ const icons = ref([
   { src: bootstrapIcon, size: '40', alt: 'Bootstrap', bgColor: bgColors[3] },
   { src: tailwindIcon, size: '40', alt: 'Tailwindcss', bgColor: bgColors[4] },
   { src: sassIcon, size: '40', alt: 'SASS', bgColor: bgColors[5] },
-  { src: reactIcon, size: '40', alt: 'PHP', bgColor: bgColors[6] },
-  { src: piniaIcon, size: '40', alt: 'MYSQL', bgColor: bgColors[7] },
+  { src: reactIcon, size: '40', alt: 'React.js', bgColor: bgColors[6] },
+  { src: piniaIcon, size: '40', alt: 'Pinia', bgColor: bgColors[7] },
 ])
 const orbitRadius = ref(140);
 const rotationAngle = ref(0);

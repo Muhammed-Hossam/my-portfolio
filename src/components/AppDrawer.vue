@@ -2,7 +2,7 @@
   <div class="drawer sm:block md:hidden relative z-50">
     <div class="overlay fixed top-0 right-0 left-0 bottom-0 bg-black opacity-20 w-screen h-screen"
       @click="closeDrawer"></div>
-    <div class="fixed top-0 right-0 bottom-0 w-3/6  bg-light dark:bg-dark shadow-md shadow-gray-400 dark:shadow-black !transition-colors !duration-500 !ease-in-out" >
+    <div class="fixed top-0 right-0 bottom-0 w-3/6  bg-light dark:bg-dark shadow-md shadow-gray-400 dark:shadow-black" >
       <div class="flex flex-col justify-around items-center h-screen px-2">
         <div>
           <ThemeSwitcher  />
