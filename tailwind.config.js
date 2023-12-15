@@ -19,10 +19,10 @@ export default {
         rotate: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' }
-        }
+        },
       },
       animation: {
-        rotate: 'rotate 6s linear infinite'
+        rotate: 'rotate 6s linear infinite',
       },
       boxShadow: {
         'card-light': '0 2px 21px 5px rgba(0, 0, 0, 0.1)',

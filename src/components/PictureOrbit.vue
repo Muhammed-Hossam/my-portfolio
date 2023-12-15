@@ -5,7 +5,7 @@
         <img src="../assets/me.png" class="rounded-full w-36 h-36 lg:w-72 lg:h-72"  alt="mohamed-haroun">
       </div>
     </div>
-    <ul class="orbit-icons absolute top-0 left-[10%] lg:top-[18%] lg:left-[20%] origin-center">
+    <ul class="orbit-icons absolute top-0 left-[10%] lg:top-[18%] lg:left-[20.5%] origin-center">
       <li 
       v-for="(icon, index) in icons" 
       :key="index"
