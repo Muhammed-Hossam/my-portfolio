@@ -1,7 +1,7 @@
 <template>
   <div class="app !transition-colors !duration-500 !ease-in-out" ref="app">
     <AppHeader  />
-    <main class="mt-16" >
+    <main class="min-h-screen mt-16" >
       <div class="container mx-auto">
         <router-view v-slot="{ Component }">
           <Transition name="slide-down" mode="out-in">

@@ -1,7 +1,49 @@
-# Vue 3 + Vite
+# "Mohamed Haroun"'s Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to my personal portfolio! This project showcases my skills, projects, and a bit about myself. Feel free to explore and learn more about what I do.
 
-## Recommended IDE Setup
+## Live Demo
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Visit my portfolio [here](https://mohamedharoun.vercel.app/).
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Features
+
+- Responsive design for various devices.
+- Project showcase with live demo links and GitHub repositories.
+- About me section with skills and background.
+- Contact form for reaching out.
+
+## Technologies
+
+- Vue.js 3 (Composition API) + Vite
+- Tailwind CSS
+- Pinia
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Muhammed-Hossam/my-portfolio.git
+
+2. Install dependencies:
+   ```bash
+   cd your-portfolio
+   npm install
+
+3. Start the development server:
+   ```bash
+   npm run dev
+
+#### Thank you for visiting my portfolio! 🚀

@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center mb-4 mt-8 w-11/12 mx-auto">
+  <footer class=" text-center mb-4 mt-8 w-11/12 mx-auto">
     <div class="social_media__links flex justify-center items-center mb-2 gap-8">
       <a href="https://linkedin.com/in/mohamed--haroun" target="_blank">
         <img :src="Linkedin" width="45" height="45" alt="">
