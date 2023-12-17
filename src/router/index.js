@@ -3,6 +3,7 @@ const Home = () => import('../views/HomeView.vue');
 const About = () => import('../views/AboutView.vue');
 const Contact = () => import('../views/ContactView.vue');
 const RecentWork = () => import('../views/RecentWork.vue');
+const NotFound = () => import('../views/NotFound.vue');
 
 const routes = [
   {
@@ -24,6 +25,10 @@ const routes = [
     path: '/recent',
     name: 'Recent Work',
     component: RecentWork,
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: NotFound,
   },
 ];
 

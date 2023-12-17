@@ -11,11 +11,6 @@ Visit my portfolio [here](https://mohamedharoun.vercel.app/).
 - [Features](#features)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
