@@ -2,7 +2,7 @@
   <div class="recent-work">
     <div class="container">
       <div class="flex flex-col justify-center items-center mb-8">
-          <SectionHeading title="My Recent Work" text-size="text-3xl lg:text-6xl" :is-uppercase="true" class="my-14" />
+          <MainHeading title="My Recent Work" text-size="text-3xl lg:text-6xl" :is-uppercase="true" class="my-14" />
           <div class="flex justify-center  flex-wrap  gap-6">
             <ProjectCard v-for="(project, index) in projects" :key="index" :project="project" />
           </div>
@@ -14,7 +14,7 @@
 
 <script setup>
 import ProjectCard from '../components/ProjectCard.vue';
-import SectionHeading from '../components/SectionHeading.vue';
+import MainHeading from '../components/MainHeading.vue';
 
 /** Start importing images for Space Tourism Website **/
 import spaceTourism1 from '../assets/projects/space-tourism/1.png'

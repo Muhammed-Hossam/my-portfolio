@@ -10,11 +10,13 @@
         </router-view>
       </div>
     </main>
+    <AppFooter />
   </div>
 </template>
 
 <script setup>
 import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 import { onBeforeUnmount, ref, computed, onMounted, watch } from 'vue';
 import { useThemeStore } from './store/themeStore';
 

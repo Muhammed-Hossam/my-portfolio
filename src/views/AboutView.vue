@@ -29,7 +29,7 @@
           Always learning, always coding — I stay ahead in web development trends.
           <FormatQuoteCloseOutline class="text-xl lg:text-4xl text-slate-500" />
         </p>
-        <SectionHeading title="Knowledge" text-size="text-2xl lg:text-4xl" class="my-10" />
+        <MainHeading title="Knowledge" text-size="text-2xl lg:text-4xl" class="my-10" />
         <p class="text-sm lg:text-2xl font-semibold text-gray-800 dark:text-slate-300 text-center">
           These are the essential tools, libraries, and frameworks that constitute
           my current tech stack, enabling me to develop robust and innovative applications
@@ -37,7 +37,7 @@
         <div class="stack-icons flex justify-center gap-4 flex-wrap mt-10">
           <SkillsIcon v-for="(icon, index) in myTechStack" :key="index" :icon-name="icon.name" :icon-src="icon.src" />
         </div>
-        <SectionHeading title="Current Learning" text-size="text-2xl lg:text-4xl" class="my-10" />
+        <MainHeading title="Current Learning" text-size="text-2xl lg:text-4xl" class="my-10" />
         <div class="stack-icons flex justify-center gap-4 flex-wrap mt-10">
           <SkillsIcon 
             v-for="(icon, index) in currentLearning" 
@@ -70,7 +70,7 @@
           class="w-80 !mt-0"
           animation-size=" before:w-[150px] before:h-[160%] lg:before:w-[175%] lg:before:h-[150px] md:before:h-[90px]"
           >
-          <SectionHeading title="Soft Skills" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
+          <MainHeading title="Soft Skills" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
           <ul class="pl-2 my-4">
             <li v-for="(skill, index) in softSkills" :key="index" class="before:inline-block before:w-2.5 before:h-2.5 before:rounded-sm before:bg-blue-600 before:mr-2 text-lg text-gray-900 dark:text-slate-300 font-semibold leading-relaxed">{{ skill }}</li>
           </ul>
@@ -84,7 +84,7 @@
             class="w-80 !mt-0"
             animation-size="before:w-[125%] before:h-[80px]"
             >
-            <SectionHeading title="Age" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
+            <MainHeading title="Age" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
             <p class="text-2xl my-4 text-center text-gray-900 dark:text-slate-300 font-semibold">{{ myAge }} years old</p>
           </InfoCard>
           <InfoCard 
@@ -95,7 +95,7 @@
             class="w-80 !mt-0"
             animation-size="before:w-[125%] before:h-[80px]"
             >
-            <SectionHeading title="Languages" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
+            <MainHeading title="Languages" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
             <ul class="pl-2 my-4">
               <li v-for="(lang, index) in languages" :key="index" class="before:inline-block before:w-2.5 before:h-2.5 before:rounded-sm before:bg-blue-600 before:mr-2 text-lg leading-relaxed">
                 <span class="text-xl font-semibold mr-4">{{ lang.lang }}:</span>
@@ -112,7 +112,7 @@
             animation-size="before:w-[125%] before:h-[80px]"
 
             >
-            <SectionHeading title="Military Status" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
+            <MainHeading title="Military Status" text-size="text-2xl lg:text-3xl" :is-uppercase="true" />
             <p class="text-2xl my-4 text-center font-bold text-green-600 dark:text-green-500">Exemption</p>
           </InfoCard>
         </div>
@@ -128,7 +128,7 @@ import { useAgeCalculator } from '../composables/calcAge';
 
 /** Start importing components and matrial icons */
 import InfoCard from '../components/InfoCard.vue';
-import SectionHeading from '../components/SectionHeading.vue';
+import MainHeading from '../components/MainHeading.vue';
 import SkillsIcon from '../components/SkillsIcon.vue';
 import AboutPageTitle from '../components/AboutPageTitle.vue';
 import FormatQuoteOpenOutline from "vue-material-design-icons/FormatQuoteOpenOutline.vue";

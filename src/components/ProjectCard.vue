@@ -25,7 +25,7 @@
         <ChevronDown v-if="isProjectInfoShowen" class="text-2xl lg:text-3xl text-blue-600 mb-2" />
       </div>
       <div class="project-info__content px-1">
-        <SectionHeading :title="project.title" text-size="text-base lg:text-3xl" />
+        <MainHeading :title="project.title" text-size="text-base lg:text-3xl" />
         <p class="project-description text-xs lg:text-lg text-slate-100 font-medium text-center mb-1 lg:mb-4">
           {{ truncatedDescription }}
           <span v-if="isShowMoreBtnDisplayed" @click="showMoreToggle" class="cursor-pointer text-xs text-blue-500 underline">{{ showMoreText }}</span>
@@ -55,7 +55,7 @@
 <script setup>
 import { computed, ref, watch } from 'vue';
 
-import SectionHeading from './SectionHeading.vue';
+import MainHeading from './MainHeading.vue';
 import Web from 'vue-material-design-icons/Web.vue';
 import Github from 'vue-material-design-icons/Github.vue';
 import ChevronUp from 'vue-material-design-icons/ChevronUp.vue'
