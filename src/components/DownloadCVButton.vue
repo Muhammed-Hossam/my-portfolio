@@ -39,7 +39,7 @@ const downloadCV = () => {
   // Start downloading
   downloading.value = true;
 
-  fetch('/src/assets/Mohamed-Haroun-CV.pdf') // Replace with the correct path to your CV file
+  fetch('/Mohamed-Haroun-CV.pdf') // Replace with the correct path to your CV file
     .then((response) => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
