@@ -1,5 +1,5 @@
 <template>
-  <div class="orbit-container relative mt-20 z-10 lg:right-8 lg:top-4">
+  <div class="orbit-container relative mt-28 z-10 lg:right-8 lg:top-4">
     <div class="flex justify-center items-center">
       <div class="rounded-full border-4 mx-20 mt-10 border-indigo-800 bg-gradient-to-b from-indigo-600 via-purple-500 to-blue-500">
         <img src="../assets/me.png" class="rounded-full w-36 h-36 lg:w-72 lg:h-72"  alt="mohamed-haroun">
@@ -29,6 +29,7 @@ import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
 import jsIcon from '../assets/tech-icons/javascript-original.svg';
 import vueIcon from '../assets/tech-icons/vuejs-original.svg'
+import nuxt from '../assets/tech-icons/nuxtjs.svg';
 import vuetifyIcon from '../assets/tech-icons/vuetify-original.svg'
 import bootstrapIcon from '../assets/tech-icons/bootstrap-original.svg'
 import tailwindIcon from '../assets/tech-icons/tailwindcss-plain.svg'
@@ -46,6 +47,7 @@ import piniaIcon from '../assets/tech-icons/pinia-original.svg'
     'bg-fuchsia-800 hover:bg-fuchsia-900',
     'bg-sky-500 hover:bg-sky-600',
     'bg-yellow-500 hover:bg-yellow-600',
+    'bg-green-600 hover:bg-green-700' // New color for Nuxt.js
   ];
 
   const isLargeScreen = ref(false);
@@ -57,6 +59,7 @@ import piniaIcon from '../assets/tech-icons/pinia-original.svg'
 const icons = ref([
   { src: jsIcon, size: '40', alt: 'JavaScript', bgColor: bgColors[0] },
   { src: vueIcon, size: '40', alt: 'Vue.js', bgColor: bgColors[1] },
+  { src: nuxt, size: '40', alt: 'Nuxt.js', bgColor: bgColors[8] },
   { src: vuetifyIcon, size: '40', alt: 'Vuetify', bgColor: bgColors[2] },
   { src: bootstrapIcon, size: '40', alt: 'Bootstrap', bgColor: bgColors[3] },
   { src: tailwindIcon, size: '40', alt: 'Tailwindcss', bgColor: bgColors[4] },

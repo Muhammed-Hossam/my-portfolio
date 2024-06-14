@@ -1,29 +1,19 @@
 <template>
   <div class="About">
     <div class="flex flex-col items-center justify-center">
-      <InfoCard 
-        :has-title="true" 
-        card-padding="p-6"
-        :use-scale="true"
-        :use-animation="false"
-        title="summary" 
-        class="w-5/6"
-        >
+      <InfoCard :has-title="true" title="summary" card-padding="p-6" :use-scale="true" :use-animation="false" class="w-5/6">
         <p class="xl:text-2xl">
-          Passionate and highly motivated junior frontend web developer with a strong
-          desire to learn and grow within a collaborative team environment. Skilled in
-          Vue.js Framework, I am dedicated to creating user-friendly web applications
-          and proficiently handling RESTful APIs.
+          Passionate and highly motivated Frontend Web Developer with over 6
+          months of experience in creating user-friendly web applications. Proficient in
+          HTML, CSS, JavaScript, Bootstrap, Vue.js, Nuxt.js, Vuetify Git & GitHub, and
+          SASS. I am dedicated to staying up-to-date with the latest web development
+          technologies and trends, constantly seeking new challenges and
+          opportunities to improve my skills and deliver innovative solutions. Seeking
+          to join a dynamic organization where I can use my skills.
         </p>
       </InfoCard>
-      <InfoCard 
-        :has-title="true" 
-        card-padding="p-6"
-        :use-scale="false"
-        :use-animation="false"
-        title="Technical Skills" 
-        class="w-5/6"
-        >
+
+      <InfoCard :has-title="true" title="Technical Skills" card-padding="p-6" :use-scale="false" :use-animation="false" class="w-5/6">
         <p class="text-sm lg:text-xl text-center mb-4 text-gray-600 dark:text-gray-400">
           <FormatQuoteOpenOutline class="text-xl lg:text-4xl text-slate-500" />
           Always learning, always coding — I stay ahead in web development trends.
@@ -47,6 +37,11 @@
           />
         </div>
       </InfoCard>
+
+      <InfoCard :has-title="true" title="Work Experience" card-padding="p-6" :use-scale="true" :use-animation="false" class="w-5/6 ">
+        <WorkExprienceTimeline v-for="exprience in myWorkExprience" :key="exprience.id" :job-title="exprience.jobTitle" :company-name="exprience.companyName" :date="exprience.date" :responsibilities="exprience.responsibilities" />
+      </InfoCard>
+
       <AboutPageTitle title="Education & Certificates" class="mt-28" />
       <div class="flex justify-center flex-wrap w-5/6 gap-4">
         <CertificateCard 
@@ -133,6 +128,7 @@ import SkillsIcon from '../components/SkillsIcon.vue';
 import AboutPageTitle from '../components/AboutPageTitle.vue';
 import FormatQuoteOpenOutline from "vue-material-design-icons/FormatQuoteOpenOutline.vue";
 import FormatQuoteCloseOutline from "vue-material-design-icons/FormatQuoteCloseOutline.vue";
+import WorkExprienceTimeline from '../components/WorkExprienceTimeline.vue';
 /** End importing components and matrial icons */
 
 /** Start importing skills icons */
@@ -177,6 +173,7 @@ const myTechStack = [
   { name: 'Tailwindcss', src: tailwindcss },
   { name: 'React.js', src: reactjs },
   { name: 'Vue.js', src: vuejs },
+  { name: 'Nuxt', src: nuxt },
   { name: 'Vuetify.js', src: vuetifyjs },
   { name: 'Pinia', src: pinia },
   { name: 'git', src: git },
@@ -189,10 +186,23 @@ const myTechStack = [
 ]
 
 const currentLearning = [
-  { name: 'Nuxt', src: nuxt },
   { name: 'PHP', src: php },
   { name: 'MySQL', src: mysql },
   { name: 'Laravel', src: laravel }
+]
+
+const myWorkExprience = [
+  {
+    jobTitle: 'Junior Frontend Developer | Vue.js/Nuxt.js',
+    companyName: 'Elryad for Web Design',
+    date: 'Jun, 2024',
+    responsibilities: [
+      'Developed responsive web applications using Vue.js, Nuxt.js, and Vuetify',
+      'Collaborated with backend developers to integrate RESTful APIs',
+      'Utilized Git for version control and collaborated on GitHub',
+      'Implemented state management using Pinia and Vuex'
+    ]
+  }
 ]
 
 const myCertificates = [

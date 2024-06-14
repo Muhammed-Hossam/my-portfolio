@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 bg-light dark:bg-dark" :class="headerShadow">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-light dark:bg-dark py-3" :class="headerShadow">
     <div class="container mx-auto ">
       <div class="flex justify-between items-center">
         <div class="logo">
