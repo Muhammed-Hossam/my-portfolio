@@ -195,7 +195,7 @@ const myWorkExprience = [
   {
     jobTitle: 'Junior Frontend Developer | Vue.js/Nuxt.js',
     companyName: 'Elryad for Web Design',
-    date: 'Jun, 2024',
+    date: 'Jan, 2024',
     responsibilities: [
       'Developed responsive web applications using Vue.js, Nuxt.js, and Vuetify',
       'Collaborated with backend developers to integrate RESTful APIs',

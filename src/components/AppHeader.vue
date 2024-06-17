@@ -17,7 +17,10 @@
       </div>
     </div>
   </header>
-  <AppDrawer v-if="drawer" @close-drawer="toggleDrawer" />
+
+  <Transition name="slide">
+    <AppDrawer v-if="drawer" @close-drawer="toggleDrawer" />
+  </Transition>
 
 </template>
 
