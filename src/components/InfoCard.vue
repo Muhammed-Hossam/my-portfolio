@@ -13,6 +13,7 @@
       rounded-lg
       before:absolute
       before:rounded-lg
+      after:rounded-lg
       after:absolute
       after:bg-cover
       after:bg-no-repeat

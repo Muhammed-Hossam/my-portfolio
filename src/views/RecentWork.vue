@@ -16,28 +16,22 @@
 import ProjectCard from '../components/ProjectCard.vue';
 import MainHeading from '../components/MainHeading.vue';
 
-/** Start importing images for Space Tourism Website **/
-import spaceTourism1 from '../assets/projects/space-tourism/1.png'
-import spaceTourism2 from '../assets/projects/space-tourism/2.png'
-import spaceTourism3 from '../assets/projects/space-tourism/3.png'
-import spaceTourism4 from '../assets/projects/space-tourism/4.png'
-/** End importing images for Space Tourism Website **/
+/** Images for masaba website **/
+import masab1 from '../assets/projects/masab/masab-sa-1.png';
+import masab2 from '../assets/projects/masab/masab-sa-2.png';
+import masab3 from '../assets/projects/masab/masab-sa-3.png';
+import masab4 from '../assets/projects/masab/masab-sa-4.png';
 
-/** Start importing images for deaf-dumb Website **/
-import deafDumb1 from '../assets/projects/deaf-dumb/1.png';
-import deafDumb2 from '../assets/projects/deaf-dumb/2.png';
-import deafDumb3 from '../assets/projects/deaf-dumb/3.png';
-import deafDumb4 from '../assets/projects/deaf-dumb/4.png';
-import deafDumb5 from '../assets/projects/deaf-dumb/5.png';
-import deafDumb6 from '../assets/projects/deaf-dumb/6.png';
-import deafDumb7 from '../assets/projects/deaf-dumb/7.png';
-import deafDumb8 from '../assets/projects/deaf-dumb/8.png';
-import deafDumb9 from '../assets/projects/deaf-dumb/9.png';
-import deafDumb10 from '../assets/projects/deaf-dumb/10.png';
-import deafDumb11 from '../assets/projects/deaf-dumb/11.png';
-import deafDumb12 from '../assets/projects/deaf-dumb/12.png';
-import deafDumb13 from '../assets/projects/deaf-dumb/13.png';
-/** End importing images for deaf-dumb Website **/
+/** Images for medsys website **/
+import medsys1 from '../assets/projects/medsys/medsys-1.png';
+import medsys2 from '../assets/projects/medsys/medsys-2.png';
+import medsys3 from '../assets/projects/medsys/medsys-3.png';
+import medsys4 from '../assets/projects/medsys/medsys-4.png';
+
+/** Images for Tabok website **/
+import tabok1 from '../assets/projects/tabok/tabok-1.png';
+import tabok2 from '../assets/projects/tabok/tabok-2.png';
+
 
 /** Start importing images for darsy-platform website **/
 import darsyPlatform1 from '../assets/projects/darsy-platform/1.png';
@@ -47,6 +41,7 @@ import projectComingSoonImg from '../assets/projects/darsy-platform/project-comi
 
 /** Start import Tech Icons **/
 import vuejs from '../assets/tech-icons/vuejs-original.svg';
+import nuxtjs from '../assets/tech-icons/nuxtjs.svg';
 import vuetify from '../assets/tech-icons/vuetify-original.svg';
 import bootstrap from '../assets/tech-icons/bootstrap-original.svg';
 import sass from '../assets/tech-icons/sass-original.svg';
@@ -55,23 +50,20 @@ import swiperjs from '../assets/tech-icons/swiper-logo.svg';
 import pinia from '../assets/tech-icons/pinia-original.svg';
 import laravel from '../assets/tech-icons/laravel.svg';
 import mysql from '../assets/tech-icons/mysql.svg';
+import primeVue from '../assets/tech-icons/primevue-logo.png';
 /** End import Tech Icons **/
 
 
 const projects  = [
   {
-    title: 'Deaf & Dumb Website',
-    images: [deafDumb1, deafDumb2, deafDumb3, deafDumb4, deafDumb5, deafDumb6, deafDumb7, deafDumb8, deafDumb9, deafDumb10, deafDumb11, deafDumb12, deafDumb13],
-    description: 'A website to aid deaf and dumb individuals in learning English, featuring user authentication, profile customization, and a data-upload dashboard using Firebase.',
-    demoLink: 'https://deaf-dumb.netlify.app',
-    githubLink: 'https://github.com/Muhammed-Hossam/deaf-dumb',
+    title: 'masab.sa',
+    images: [masab1, masab2, masab3, masab4],
+    description: 'Designed and developed a modern frontend for MASAB, a leading Saudi recycling initiative turning plastic waste into high-quality PET flakes, aligned with Vision 2030 sustainability goals.',
+    demoLink: 'https://masab.sa',
+    githubLink: '',
     demoLinkEnabled: true,
-    githubLinkEnabled: true,
+    githubLinkEnabled: false,
     techUsed: [
-      {
-        name: 'Vue.js',
-        src: vuejs
-      },
       {
         name: 'Bootstrap',
         src: bootstrap
@@ -81,8 +73,31 @@ const projects  = [
         src: sass
       },
       {
-        name: 'Firebase',
-        src: firebase
+        name: 'Swiper.js',
+        src: swiperjs
+      }
+    ]
+  },
+  {
+    title: 'Saudi Medical System',
+    images: [medsys1, medsys2, medsys3, medsys4],
+    description: 'Built a frontend interface for the Saudi Health Systems Company, enhancing user experience for a nationwide provider of therapeutic and nutritional services to hospitals and institutions.',
+    demoLink: 'https://www.saudimedsys.com',
+    githubLink: '',
+    demoLinkEnabled: true,
+    githubLinkEnabled: false,
+    techUsed: [
+      {
+        name: 'Nuxt.js',
+        src: nuxtjs
+      },
+      {
+        name: 'Vuetify',
+        src: vuetify
+      },
+      {
+        name: 'SASS',
+        src: sass
       },
       {
         name: 'Swiper.js',
@@ -91,26 +106,26 @@ const projects  = [
     ]
   },
   {
-    title: 'Space Tourism Landing Page',
-    images: [spaceTourism1, spaceTourism2, spaceTourism3, spaceTourism4],
-    description: 'Full Responsive Space Tourism Landing Page Consists of 4 pages with Sliders',
-    demoLink: 'https://zspace.netlify.app',
-    githubLink: 'https://github.com/Muhammed-Hossam/space',
+    title: 'Tabbuk Volunteer Association',
+    images: [tabok1, tabok2],
+    description: 'Developed a website for the Tabbuk Volunteer Association, connecting users with local businesses and services while enabling digital membership, payments, and exclusive discount access.',
+    demoLink: 'https://ctva.org.sa',
+    githubLink: '',
     demoLinkEnabled: true,
-    githubLinkEnabled: true,
+    githubLinkEnabled: false,
     techUsed: [
       {
-        name: 'Vue.js',
-        src: vuejs
+        name: 'Nuxt.js',
+        src: nuxtjs
       },
       {
-        name: 'Vuetify',
+        name: 'PrimeVue',
+        src: primeVue
+      },
+      {
+        name: 'Bootstrap',
         src: bootstrap
-      },
-      {
-        name: 'SASS',
-        src: sass
-      },
+      }
     ]
   },
   {

@@ -3,8 +3,8 @@
     <div class="flex flex-col items-center justify-center">
       <InfoCard :has-title="true" title="summary" card-padding="p-6" :use-scale="true" :use-animation="false" class="w-5/6">
         <p class="xl:text-2xl">
-          Passionate and highly motivated Frontend Web Developer with over 6
-          months of experience in creating user-friendly web applications. Proficient in
+          Passionate and highly motivated Frontend Web Developer with over 1
+          Year of experience in creating user-friendly web applications. Proficient in
           HTML, CSS, JavaScript, Bootstrap, Vue.js, Nuxt.js, Vuetify Git & GitHub, and
           SASS. I am dedicated to staying up-to-date with the latest web development
           technologies and trends, constantly seeking new challenges and
@@ -39,7 +39,15 @@
       </InfoCard>
 
       <InfoCard :has-title="true" title="Work Experience" card-padding="p-6" :use-scale="true" :use-animation="false" class="w-5/6 ">
-        <WorkExprienceTimeline v-for="exprience in myWorkExprience" :key="exprience.id" :job-title="exprience.jobTitle" :company-name="exprience.companyName" :date="exprience.date" :responsibilities="exprience.responsibilities" />
+        <WorkExprienceTimeline 
+          v-for="(exprience, index) in myWorkExprience" 
+          :key="exprience.id" 
+          :job-title="exprience.jobTitle" 
+          :company-name="exprience.companyName" 
+          :date="exprience.date" 
+          :responsibilities="exprience.responsibilities"
+          :is-last="index === myWorkExprience.length - 1"
+        />
       </InfoCard>
 
       <AboutPageTitle title="Education & Certificates" class="mt-28" />
@@ -192,6 +200,19 @@ const currentLearning = [
 ]
 
 const myWorkExprience = [
+{
+    jobTitle: 'Frontend Developer | Vue.js/Nuxt.js',
+    companyName: 'Awammer Alshabaka - AAIT',
+    date: 'Sep, 2024',
+    responsibilities: [
+      'Developed responsive web applications using Nuxt 3, Pinia, and PrimeVue',
+      'Collaborated with backend developers to integrate RESTful APIs',
+      'Using vee-validate for form validation',
+      'Working on multi-Role Authentication Systems',
+      'Working on social media platform with two roles (Individual and Company)',
+      'Working on a Provider Dashboard for Education Platform with 4 different roles (Teacher, Platform, Facility, Follow-up Teacher)',
+    ]
+  },
   {
     jobTitle: 'Junior Frontend Developer | Vue.js/Nuxt.js',
     companyName: 'Elryad for Web Design',
