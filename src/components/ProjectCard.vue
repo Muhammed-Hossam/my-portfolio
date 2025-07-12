@@ -8,7 +8,9 @@
     @mouseleave="stopSlider"
   >
     <!-- Image SlideShow -->
-    <div class="img-slide w-full h-full">
+    <div class="img-slide w-full h-full relative">
+      <BaseLoader v-if="isLoading" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full" />
+
       <img
         v-for="(image, index) in project.images"
         :key="index"
@@ -16,6 +18,7 @@
         :alt="`Project Image ${index + 1}`"
         class="w-full h-full  rounded-lg object-cover absolute transition-opacity duration-1000 ease-in-out"
         :class="{ 'opacity-100': currentIndex === index, 'opacity-0': currentIndex !== index }"
+        @load="onImageLoad(index)"
       />
     </div>
     <!-- Project Information -->
@@ -55,7 +58,9 @@
 <script setup>
 import { computed, ref, watch } from 'vue';
 
-import MainHeading from './MainHeading.vue';
+import MainHeading from './MainHeading.vue'
+import BaseLoader from './shared/BaseLoader.vue'
+;
 import Web from 'vue-material-design-icons/Web.vue';
 import Github from 'vue-material-design-icons/Github.vue';
 import ChevronUp from 'vue-material-design-icons/ChevronUp.vue'
@@ -67,6 +72,9 @@ const props = defineProps({
     required: true
   }
 });
+
+const isLoading = ref(true);
+const loadedImages = ref(0);
 
 const isProjectInfoShowen = ref(false);
 const isFullDescriptionShowen = ref(false);
@@ -100,6 +108,14 @@ const stopSlider = () => {
   sliderInterval = null;
   currentIndex.value = 0;
 };
+
+const onImageLoad = (index) => {
+  console.log(`Image ${index} loaded`);
+  loadedImages.value++;
+  if (loadedImages.value === props.project.images.length) {
+    isLoading.value = false;
+  }
+}
 
 
 watch(isProjectInfoShowen, (currentValue) => {
