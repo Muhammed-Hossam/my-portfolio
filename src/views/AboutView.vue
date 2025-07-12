@@ -3,8 +3,8 @@
     <div class="flex flex-col items-center justify-center">
       <InfoCard :has-title="true" title="summary" card-padding="p-6" :use-scale="true" :use-animation="false" class="w-5/6">
         <p class="xl:text-2xl">
-          Passionate and highly motivated Frontend Web Developer with over 1
-          Year of experience in creating user-friendly web applications. Proficient in
+          Passionate and highly motivated Frontend Web Developer with 2
+          Years of experience in creating user-friendly web applications. Proficient in
           HTML, CSS, JavaScript, Bootstrap, Vue.js, Nuxt.js, Vuetify Git & GitHub, and
           SASS. I am dedicated to staying up-to-date with the latest web development
           technologies and trends, constantly seeking new challenges and
